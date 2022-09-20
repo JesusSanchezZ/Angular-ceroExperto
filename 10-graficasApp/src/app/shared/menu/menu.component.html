@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <button *ngFor="let item of menu"
+      class="list-group-item list-group-item-action"
+      [routerLink]="[ item.ruta ]"
+      routerLinkActive="active">
+    {{ item.texto }}
+  </button>
+</ul>
